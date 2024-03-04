@@ -4,11 +4,25 @@
   "description": "Idea sharing app",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liemek/randomideas-api.git"
   },
   "author": "Iwo Tylus",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liemek/randomideas-api/issues"
+  },
+  "homepage": "https://github.com/liemek/randomideas-api#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
