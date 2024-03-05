@@ -73,7 +73,6 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
   try {
     const idea = await Idea.findById(req.params.id);
-
     // Match the usernames
     if (idea.username === req.body.username) {
       await Idea.findByIdAndDelete(req.params.id);
